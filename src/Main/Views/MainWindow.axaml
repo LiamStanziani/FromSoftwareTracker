@@ -4,6 +4,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="FromSoftwareTracker.MainWindow"
-        Title="FromSoftwareTracker">
-    Welcome to Avalonia!
+        Icon="/src/Assets/Icons/favicon.ico"
+        Title="FromSoftware Tracker">
+
+    <!-- Tab Strips for all of the supported FromSoftware games -->
+    <TabStrip>
+        <TabStripItem>
+           <TextBlock Text="Demon Souls" />
+        </TabStripItem>
+        <TabStripItem>
+            <TextBlock Text="Dark Souls" />
+        </TabStripItem>
+        <TabStripItem>
+            <TextBlock Text="Dark Souls 2" />
+        </TabStripItem>
+        <TabStripItem>
+            <TextBlock Text="Dark Souls 3" />
+        </TabStripItem>
+        <TabStripItem>
+            <TextBlock Text="Bloodborne" />
+        </TabStripItem>
+        <TabStripItem>
+            <TextBlock Text="Sekiro" />
+        </TabStripItem>
+        <TabStripItem>
+            <TextBlock Text="Elden Ring" />
+        </TabStripItem>
+        <TabStripItem>
+            <TextBlock Text="Elden Ring Nightreign" />
+        </TabStripItem>
+    </TabStrip>
 </Window>
