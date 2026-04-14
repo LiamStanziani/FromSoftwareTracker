@@ -7,31 +7,40 @@
         Icon="/src/Assets/Icons/favicon.ico"
         Title="FromSoftware Tracker">
 
-    <!-- Tab Strips for all of the supported FromSoftware games -->
-    <TabStrip>
-        <TabStripItem>
-           <TextBlock Text="Demon Souls" />
-        </TabStripItem>
-        <TabStripItem>
-            <TextBlock Text="Dark Souls" />
-        </TabStripItem>
-        <TabStripItem>
-            <TextBlock Text="Dark Souls 2" />
-        </TabStripItem>
-        <TabStripItem>
-            <TextBlock Text="Dark Souls 3" />
-        </TabStripItem>
-        <TabStripItem>
-            <TextBlock Text="Bloodborne" />
-        </TabStripItem>
-        <TabStripItem>
-            <TextBlock Text="Sekiro" />
-        </TabStripItem>
-        <TabStripItem>
-            <TextBlock Text="Elden Ring" />
-        </TabStripItem>
-        <TabStripItem>
-            <TextBlock Text="Elden Ring Nightreign" />
-        </TabStripItem>
-    </TabStrip>
+    <Grid RowDefinitions="Auto, *"> 
+        <!-- Tab Control for all of the supported FromSoftware games -->
+        <TabControl Grid.Row="0">
+            <TabItem Header="Demon Souls">
+                <TextBlock Text="Demon Souls Tracker Data" Margin="10"/>
+            </TabItem>
+            <TabItem Header="Dark Souls">
+                <TextBlock Text="Dark Souls Tracker Data" Margin="10"/>
+            </TabItem>
+            <TabItem Header="Dark Souls 2">
+                <TextBlock Text="Dark Souls 2 Tracker Data" Margin="10"/>
+            </TabItem>
+            <TabItem Header="Dark Souls 3">
+                <TextBlock Text="Dark Souls 3 Tracker Data" Margin="10"/>
+            </TabItem>
+            <TabItem Header="Bloodborne">
+                <TextBlock Text="Bloodborne Tracker Data" Margin="10"/>
+            </TabItem>
+            <TabItem Header="Sekrio">
+                <TextBlock Text="Sekiro Tracker Data" Margin="10"/>
+            </TabItem>
+            <TabItem Header="Elden Ring">
+                <TextBlock Text="Elden Ring Tracker Data" Margin="10"/>
+            </TabItem>
+            <TabItem Header="Elden Ring Nightreign">
+                <TextBlock Text="Elden Ring Nightreign Tracker Data" Margin="10"/>
+            </TabItem>
+        </TabControl>
+
+         <!-- Button for settings menu -->
+        <Button Content="Settings" 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Right" 
+                Margin="5" 
+                Padding="10,5"/>
+    </Grid>
 </Window>
