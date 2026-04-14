@@ -36,11 +36,26 @@
             </TabItem>
         </TabControl>
 
-         <!-- Button for settings menu -->
-        <Button Content="Settings" 
-                VerticalAlignment="Top" 
-                HorizontalAlignment="Right" 
-                Margin="5" 
-                Padding="10,5"/>
+        <!-- Button for settings menu -->
+        <Button Grid.Row="0" Content="Settings" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5" Padding="10,5"/>
+
+        <!-- Button for view switcher menu -->
+        <Button Grid.Row="1" Content="View Switcher Menu" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center" Margin="5" Padding="10,5">
+            <Button.Flyout>
+                <Flyout Placement="Top">
+                    <Border Padding="10" Background="{DynamicResource SystemControlBackgroundChromeMediumLowBrush}" CornerRadius="8">
+                        <UniformGrid Columns="3" Rows="2" Width="300">
+                            <!-- These would eventually be buttons with icons -->
+                            <Button Content="Bosses" HorizontalAlignment="Stretch" Margin="5"/>
+                            <Button Content="Maps" HorizontalAlignment="Stretch" Margin="5"/>
+                            <Button Content="NPCs" HorizontalAlignment="Stretch" Margin="5"/>
+                            <Button Content="Items" HorizontalAlignment="Stretch" Margin="5"/>
+                            <Button Content="Checklist" HorizontalAlignment="Stretch" Margin="5"/>
+                            <Button Content="Notes" HorizontalAlignment="Stretch" Margin="5"/>
+                        </UniformGrid>
+                    </Border>
+                </Flyout>
+            </Button.Flyout>
+        </Button>
     </Grid>
 </Window>
